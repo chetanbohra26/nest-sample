@@ -1,0 +1,9 @@
+services:
+  sample-nest-app:
+    image: postgres
+    restart: always
+    ports:
+      - "6969:5432"
+    environment:
+      - POSTGRES_USER=admin69
+      - POSTGRES_PASSWORD=supersecretpass123
